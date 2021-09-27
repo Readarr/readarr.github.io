@@ -2,6 +2,7 @@
 @import 'navbar';
 
 @droneTeal: #8e2222;
+@buttonBlue: #35c5f4;
 
 html {
   margin: 0;
@@ -55,6 +56,20 @@ header {
     display: inline-block;
     margin: 0;
   }
+}
+
+
+
+.btn-readarr {
+  background-color: fade(@buttonBlue, 20%);
+  border: 1px solid fade(@buttonBlue, 50%);
+  margin-bottom: 5px;
+  width: 300px;
+  
+  &:hover {
+    background-color: fade(@buttonBlue, 30%);
+  }
+  
 }
 
 .support, .donate {
@@ -200,6 +215,145 @@ header {
       }
     }
   }
+
+  .tab-pane pre {
+    background-color: #f8f8f8;
+    code.hljs {
+      padding: 0px;
+    }
+  }
+
+  div#downloads-v1-tabcontent {
+    border: 1px solid #ddd;
+    border-top-width: 0px;
+    background-color: #fbfbff;
+
+
+    > .tab-pane {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+        
+      .tab-pane {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  div.install-description {
+  }
+
+
+  .margin-block() {
+    display: inline-block;
+    position: relative;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    margin-right: -20px;      
+    font-size: 18px;
+    line-height: 18px;    
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  dl.install-steps {
+    margin-top: -20px;
+
+    > dt {
+      font-size: 24px;
+      line-height: 40px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      span.step {
+        .margin-block;
+        margin-bottom: 4px;
+        background-color: fade(@droneTeal, 5%);
+        border-bottom: 2px solid @droneTeal;
+      }
+    }
+    > dd {
+      > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  div.install-maintainedby {
+    //position: relative;
+    //top: -20px;
+    //height: 0px;
+    font-style: italic;
+    text-align: right;
+  }
+
+  div.install-maintainedby::before {
+    content: 'maintained by ';
+    color: gray;
+  }
+
+  div.install-alternatives {
+    border-top: 1px solid #ddd;
+    color: gray;
+    background-color: #f8f8fa;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+
+    > div {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-bottom: 10px;
+      &.collapsing {
+        height: 0px;
+        padding-bottom: 0px;
+        transition: height padding-bottom .35s ease;
+      }
+    }
+
+    > div[data-toggle] {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      
+      &::before {
+        .margin-block;
+        content: "\f054";
+        font-family: "Font Awesome 5 Free"; 
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+      }
+
+      &.collapsed {
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+  }
+  
+  div.install-alternative {
+    margin-top: 20px;
+    color: gray;
+    font-style: italic;
+  }
+
+  span.arch {
+    font-size: 10px;
+    color: grey;
+    font-style: italic;
+  }
+}
+
+.support {
+  margin-top: 30px;
 }
 
 .footer {
@@ -220,6 +374,23 @@ header {
   background:
     url('/img/background/logo.png') 50px 100px no-repeat,
     #333333 ;
+}
+
+li {
+  a svg.icon {
+    height: 1em;
+    vertical-align: middle;
+    
+    g path {
+      fill: #428bca !important;
+    }
+  }
+
+  &.active a svg.icon {
+    g path {
+      fill: #fff !important;
+    }
+  }
 }
 
 @media (max-width: 767px) {

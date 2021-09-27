@@ -1,0 +1,49 @@
+<install-steps>
+  <install-step title="Introduction">
+    <p>
+      The Arch Linux User Repository offers a
+      <a href="https://aur.archlinux.org/packages/readarr/">readarr</a>
+      package that can be installed manually
+      or using your favorite
+      <a href="https://wiki.archlinux.org/index.php/AUR_helpers">AUR helper</a>.
+    </p>
+  </install-step>
+  <install-step num="1" title="Install Readarr">
+    <p>
+      An aur helper can install readarr and its dependencies easily, or follow the
+      <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages">AUR Installing Packages</a>
+      wiki for manual installation.
+    </p>
+    <p>
+      For example, to use
+      <a href="https://github.com/Jguer/yay">yay</a>
+      to install the readarr package:
+      <pre><code class="bash">yay -S readarr</code></pre>
+    </p>
+  </install-step>
+  <install-step num="2" title="Start Readarr">
+    <pre><code class="bash">sudo systemctl daemon-reload
+sudo systemctl enable --now readarr</code></pre>
+  </install-step>
+  <install-step num="3" title="View Readarr">
+    <p>
+      Browse to
+      <code>http://localhost:8787</code>
+      to start using Readarr.
+    </p>
+    <i>(Replace 'localhost' with your server IP if you're connecting remotely)</i>
+  </install-step>
+</install-steps>
+<install-alternatives id="downloads-v1-linux-archlinux-alternatives">
+  <h5>Manual Install</h5>
+  <p>
+    It is possible to install Readarr manually from upstream using the
+    <a href="https://readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64">.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+  </p>
+  <h5>Docker container</h5>
+  <p>
+    You can follow the
+    <a href="#downloads-v1-docker">Docker guide</a>
+    to install Readarr as a Docker container instead.
+  </p>
+</install-alternatives>
