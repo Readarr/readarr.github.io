@@ -246,15 +246,13 @@
                                 Introduction
                             </dt>
                             <dd>
+                                <p>Readarr is supported natively on Windows. Readarr can be installed on Windows as Windows Service or system tray application.</p>
                                 <p>
-                                    Readarr is supported natively on Windows. Readarr can be installed on Windows as Windows Service or system tray application.
-                                </p>
-                                <p>
-                                    A Windows Service runs even when the user is not logged in, but special case must be taken since Windows Services cannot access network drives (\\server\share or X:\ mapped drives) without special configuration steps.<br>
+                                    A Windows Service runs even when the user is not logged in, but special case must be taken since Windows Services cannot access network drives (\\\\\\\\\\\\\\\\server\\\\\\\\share or X:\\\\\\\\ mapped drives) without special configuration steps.<br>
                                     It's therefore advisable to install Readarr as a system tray application if the user does not need to log out, the option to do so is provided during the installer.
                                 </p>
                                 <div class="alert alert-warning">
-                                    Readarr v0.8 no longer supports Windows XP. At this time Windows 7 <i>should</i> still work, but we will not maintain Windows 7 support. Note that KB2533623 and Microsoft Visual C++ 2015 Redistributable Update 3 are needed to run .net core apps on Windows 7
+                                    Readarr is supported on Windows 8.1 and Server 2012 or later. Pre-release or earlier versions of Windows are not supported.
                                 </div>
                             </dd>
                             <dt>
@@ -262,11 +260,9 @@
                                 Install Readarr
                             </dt>
                             <dd>
-                                <p>
-                                    Download the Windows Installer with the following link and execute it.
-                                </p>
-                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x64&installer=true>Download Windows x64 Installer</a>
-                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x86&installer=true>Download Windows x86 Installer</a>
+                                <p>Download the Windows Installer with the following link and execute it.</p>
+                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/nightly/updatefile?os=windows&runtime=netcore&arch=x64&installer=true>Download Windows x64 Installer</a>
+                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/nightly/updatefile?os=windows&runtime=netcore&arch=x86&installer=true>Download Windows x86 Installer</a>
                             </dd>
                             <dt>
                                 <span class=step>2</span>
@@ -274,7 +270,9 @@
                             </dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:8787</code> to start using Readarr.
+                                    Browse to
+                                    <code>http://localhost:8787</code>
+                                    to start using Readarr.
                                 </p>
                             </dd>
                         </dl>
@@ -283,7 +281,8 @@
                             <div class=collapse id=downloads-v1-windows-alternatives>
                                 <h5>Manual Install</h5>
                                 <p>
-                                    It is possible to install Readarr manually using the x64 <a href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=windows&runtime=netcore&arch=x64>.zip download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                    It is possible to install Readarr manually using the x64
+                                    <a href=https://Readarr.servarr.com/v1/update/nightly/updatefile?os=windows&runtime=netcore&arch=x64>.zip download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                             </div>
                         </div>
@@ -366,7 +365,7 @@ sudo systemctl enable --now readarr</code></pre>
                                             <h5>Manual Install</h5>
                                             <p>
                                                 It is possible to install Readarr manually from upstream using the
-                                                <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                                <a href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=linux&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                             </p>
                                             <h5>Docker container</h5>
                                             <p>
@@ -394,21 +393,20 @@ sudo systemctl enable --now readarr</code></pre>
                                 <div class="tab-pane fade" id=downloads-v1-linux-other role=tabpanel>
                                     <div class=install-description>
                                         <div class="alert alert-info">
-                                            Please contact us if you wish to port Readarr v3 for any other distribution that the ones already listed.<br>
-                                            Readarr v0.2 was supported by various third-parties on other platforms and we prefer to coordinate the port of v3.
+                                            Please contact us if you wish to port Readarr for any other distribution that the ones already listed.<br>
                                         </div>
                                         <p>Generic .tar.gz downloads are available for linux, but dependencies, installation and permissions will need to be done manually.</p>
                                         <div>
-                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>Download Linux x64 (netcore)</a>
+                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=linux&runtime=netcore&arch=x64>Download Linux x64 (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=arm>Download Linux arm (netcore)</a>
+                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=linux&runtime=netcore&arch=arm>Download Linux arm (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=arm64>Download Linux arm64 (netcore)</a>
+                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=linux&runtime=netcore&arch=arm64>Download Linux arm64 (netcore)</a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=linuxmusl&runtime=netcore&arch=x64>Download Linux Musl x64 (netcore)</a>
+                                            <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=linuxmusl&runtime=netcore&arch=x64>Download Linux Musl x64 (netcore)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,25 +419,21 @@ sudo systemctl enable --now readarr</code></pre>
                                 Introduction
                             </dt>
                             <dd>
-                                <p>
-                                    The easiest way to install Readarr on macOS is to use the App archive with the steps described below.
-                                </p>
+                                <p>The easiest way to install Readarr on macOS is to use the App archive with the steps described below.</p>
                             </dd>
                             <dt>
                                 <span class=step>1</span>
                                 Download App package
                             </dt>
                             <dd>
-                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64&installer=true>Download macOS App</a>
+                                <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/nightly/updatefile?os=osx&runtime=netcore&arch=x64&installer=true>Download macOS App</a>
                             </dd>
                             <dt>
                                 <span class=step>2</span>
                                 Install App
                             </dt>
                             <dd>
-                                <p>
-                                    Open the archive and drag the Readarr icon to your Application folder.
-                                </p>
+                                <p>Open the archive and drag the Readarr icon to your Application folder.</p>
                                 <div class="alert alert-warning">
                                     Readarr is not compatible with OSX versions < 10.13 due to netcore compatability. </div>
                             </dd>
@@ -448,12 +442,7 @@ sudo systemctl enable --now readarr</code></pre>
                                 Start Readarr
                             </dt>
                             <dd>
-                                <p>
-                                    Open Readarr.app in your Application folder.
-                                </p>
-                                <div class="alert alert-info">
-                                    During startup it may ask you to install the Mono Runtime if an appropriate version is not already installed.
-                                </div>
+                                <p>Open Readarr.app in your Application folder.</p>
                             </dd>
                             <dt>
                                 <span class=step>4</span>
@@ -461,7 +450,9 @@ sudo systemctl enable --now readarr</code></pre>
                             </dt>
                             <dd>
                                 <p>
-                                    Browse to <code>http://localhost:8787</code> to start using Readarr.
+                                    Browse to
+                                    <code>http://localhost:8787</code>
+                                    to start using Readarr.
                                 </p>
                             </dd>
                         </dl>
@@ -470,11 +461,14 @@ sudo systemctl enable --now readarr</code></pre>
                             <div class=collapse id=downloads-v1-macos-alternatives>
                                 <h5>Manual Install</h5>
                                 <p>
-                                    It is possible to install Readarr manually using the <a href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                    It is possible to install Readarr manually using the
+                                    <a href=https://Readarr.servarr.com/v1/update/nightly/updatefile?os=osx&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                                 <h5>Docker container</h5>
                                 <p>
-                                    You can follow the <a href=#downloads-v1-docker>Docker guide</a> to install Readarr as a Docker container instead.
+                                    You can follow the
+                                    <a href=#downloads-v1-docker>Docker guide</a>
+                                    to install Readarr as a Docker container instead.
                                 </p>
                             </div>
                         </div>
@@ -499,14 +493,18 @@ sudo systemctl enable --now readarr</code></pre>
                             <div class=tab-content id=download-v1-nas-tabcontent>
                                 <div class="tab-pane fade active in" id=downloads-v1-nas-synology role=tabpanel>
                                     <div class="alert alert-info">
-                                        A package and installation instructions are provided by SynoCommunity at: <a href=https://synocommunity.com/package/Readarr>https://synocommunity.com/package/Readarr</a>.
+                                        Synology *Arr applications are maintained by the Synology Community.<br>
+                                        A package does not exist currently.
+                                        Please contact us if you wish to maintain a Readarr package so that we can include the appropriate install instructions.
                                         Please note that the SynoCommunity typically has signifcant lag in providing updated packages, thus you may want to check out Docker.
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id=downloads-v1-nas-qnap role=tabpanel>
                                     <div class="alert alert-info">
-                                        The Readarr v0.7 Qnap port was maintained by the Qnap forum community.<br>
-                                        Please contact us if you wish to maintain a v0.8 package so that we can include the appropriate install instructions.
+                                        Qnap *Arr applications are maintained by the Qnap Community.<br>
+                                        A package does not exist currently.
+                                        Please contact us if you wish to maintain a Readarr package so that we can include the appropriate install instructions.
+                                        Please note that the Qnap Community typically has signifcant lag in providing updated packages, thus you may want to check out Docker.
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id=downloads-v1-nas-other role=tabpanel>
@@ -514,9 +512,7 @@ sudo systemctl enable --now readarr</code></pre>
                                         <div class="alert alert-info">
                                             Please contact us if you wish to port Readarr for any other nas that the ones already listed.
                                         </div>
-                                        <p>
-                                            A generic download is available for linux, but dependencies, installation, and permissions will need to be done manually.
-                                        </p>
+                                        <p>A generic download is available for linux, but dependencies, installation, and permissions will need to be done manually.</p>
                                         <a class="btn btn-readarr" href=https://Readarr.servarr.com/v1/update/develop/updatefile?os=linux&runtime=netcore&arch=x64>Download Linux .tar.gz</a>
                                     </div>
                                 </div>
@@ -592,7 +588,7 @@ sudo systemctl enable --now readarr</code></pre>
                                 <ul>
                                     <li>
                                         <h5>
-                                            <a href=https://ghcr.io/hotio/readarr:latest>ghcr.io/hotio/readarr:release</a>
+                                            <a href=https://ghcr.io/hotio/readarr:nightly>ghcr.io/hotio/readarr:nightly</a>
                                         </h5>
                                         <p>
                                             <a href=https://hotio.dev>hotio</a>
@@ -605,7 +601,7 @@ sudo systemctl enable --now readarr</code></pre>
                                     </li>
                                     <li>
                                         <h5>
-                                            <a href=https://ghcr.io/linuxserver/readarr:latest>ghcr.io/linuxserver/readarr:latest</a>
+                                            <a href=https://ghcr.io/linuxserver/readarr:nightly>ghcr.io/linuxserver/readarr:nightly</a>
                                         </h5>
                                         <p>
                                             <a href=https://www.linuxserver.io>linuxserver.io</a>
@@ -629,9 +625,9 @@ sudo systemctl enable --now readarr</code></pre>
                             <dd>
                                 <p>
                                     The Readarr team provides
-                                    <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=bsd&arch=x64&runtime=netcore>builds for BSD</a>.<br>
+                                    <a href=https://readarr.servarr.com/v1/update/nightly/updatefile?os=bsd&arch=x64&runtime=netcore>builds for BSD</a>.<br>
                                     Additional details can be found on Frank's GH
-                                    <a href=https://github.com/Thefrank/freebsd-port-sooners/blob/main/Radarr_Installation_TrueNAS_GUI.md/>Link</a>
+                                    <a href=https://github.com/Thefrank/freebsd-port-sooners/>Link</a>
                                 </p>
                             </dd>
                         </dl>
@@ -710,8 +706,8 @@ sudo systemctl enable --now readarr</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <script src=js/theme.js?v=85693f7f35c872717ee514c10ca38fdc></script>
-    <script type=text/javascript src=js/index-slider.js?v=072006930bd52788bb7ab0a7d16861f7></script>
+    <script src=js/theme.js?v=453b4ff1a4f41c49315a28f79aa5ea83></script>
+    <script type=text/javascript src=js/index-slider.js?v=48ba37f65a8c9499e4833ad1924fccb7></script>
 </body>
 
 </html>
