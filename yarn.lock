@@ -570,20 +570,20 @@ browser-refresh-client@^1.0.0:
   resolved "https://registry.yarnpkg.com/browser-refresh-client/-/browser-refresh-client-1.1.4.tgz#8e5ff8475fe1d541d2ae81f7a1aea05ae21a6217"
   integrity sha1-jl/4R1/h1UHSroH3oa6gWuIaYhc=
 
-browser-sync-client@^2.27.5:
-  version "2.27.5"
-  resolved "https://registry.yarnpkg.com/browser-sync-client/-/browser-sync-client-2.27.5.tgz#acca1d8d3cf2a212e22e50119c97947772b79ef7"
-  integrity sha512-l2jtf60/exv0fQiZkhi3z8RgexYYLGS7DVDnyepkrp+oFAPlKW69daL6NrVSgrwu6lzSTCCTAiPXnUSrQ57e/Q==
+browser-sync-client@^2.27.7:
+  version "2.27.7"
+  resolved "https://registry.yarnpkg.com/browser-sync-client/-/browser-sync-client-2.27.7.tgz#e09dce1add876984cf8232de95d2332d29401a64"
+  integrity sha512-wKg9UP9a4sCIkBBAXUdbkdWFJzfSAQizGh+nC19W9y9zOo9s5jqeYRFUUbs7x5WKhjtspT+xetVp9AtBJ6BmWg==
   dependencies:
     etag "1.8.1"
     fresh "0.5.2"
     mitt "^1.1.3"
     rxjs "^5.5.6"
 
-browser-sync-ui@^2.27.5:
-  version "2.27.5"
-  resolved "https://registry.yarnpkg.com/browser-sync-ui/-/browser-sync-ui-2.27.5.tgz#fe016377edaff7d4a9cb1e8a449cc0807e814884"
-  integrity sha512-KxBJhQ6XNbQ8w8UlkPa9/J5R0nBHgHuJUtDpEXQx1jBapDy32WGzD0NENDozP4zGNvJUgZk3N80hqB7YCieC3g==
+browser-sync-ui@^2.27.7:
+  version "2.27.7"
+  resolved "https://registry.yarnpkg.com/browser-sync-ui/-/browser-sync-ui-2.27.7.tgz#38cd65f7ba058544310591ad8ac2e7fdf29934f2"
+  integrity sha512-Bt4OQpx9p18OIzk0KKyu7jqlvmjacasUlk8ARY3uuIyiFWSBiRgr2i6XY8dEMF14DtbooaEBOpHEu9VCYvMcCw==
   dependencies:
     async-each-series "0.1.1"
     connect-history-api-fallback "^1"
@@ -592,13 +592,13 @@ browser-sync-ui@^2.27.5:
     socket.io-client "^2.4.0"
     stream-throttle "^0.1.3"
 
-browser-sync@^2.26.13:
-  version "2.27.5"
-  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.27.5.tgz#9e547645b045f8780d775dc2cc5409357bec6c08"
-  integrity sha512-0GMEPDqccbTxwYOUGCk5AZloDj9I/1eDZCLXUKXu7iBJPznGGOnMHs88mrhaFL0fTA0R23EmsXX9nLZP+k5YzA==
+browser-sync@^2.26.14:
+  version "2.27.7"
+  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.27.7.tgz#65ec55d6c6e33283e505e06e5113bc32d9d0a8f0"
+  integrity sha512-9ElnnA/u+s2Jd+IgY+2SImB+sAEIteHsMG0NR96m7Ph/wztpvJCUpyC2on1KqmG9iAp941j+5jfmd34tEguGbg==
   dependencies:
-    browser-sync-client "^2.27.5"
-    browser-sync-ui "^2.27.5"
+    browser-sync-client "^2.27.7"
+    browser-sync-ui "^2.27.7"
     bs-recipes "1.3.4"
     bs-snippet-injector "^2.0.1"
     chokidar "^3.5.1"
@@ -625,7 +625,7 @@ browser-sync@^2.26.13:
     serve-static "1.13.2"
     server-destroy "1.0.1"
     socket.io "2.4.0"
-    ua-parser-js "^0.7.28"
+    ua-parser-js "1.0.2"
     yargs "^15.4.1"
 
 bs-recipes@1.3.4:
@@ -2133,15 +2133,10 @@ flush-write-stream@^1.0.2:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
-  integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
-
-follow-redirects@^1.14.0:
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
-  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
+  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -2657,10 +2652,10 @@ html-comment-regex@^1.1.2:
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
   integrity sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
 
-htmljs-parser@^2.7.1:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/htmljs-parser/-/htmljs-parser-2.10.0.tgz#6030d0b35ba2cd60c27a851151d446ed0c3a1f67"
-  integrity sha512-HxGvSIIHpnC8WsVqZ/OAxPsgh8xIL7d0eb24TG/WwjxCbzjuxiJm6g8NHAlfFDYq4H9Q/kztAlUxQ/plS/IZfw==
+htmljs-parser@^2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/htmljs-parser/-/htmljs-parser-2.11.1.tgz#12493a2f00cdb3603d3f6c2b7cb264ae4660a60f"
+  integrity sha512-9TM67eoRSSYFYi+R0yP8ysFOzhQiXClQ41r8V+HCWXuQHKG5qEtY/H8wAhOIsBEVroIeMHU/DatFKOkMXmDnwg==
   dependencies:
     char-props "^0.1.5"
     complain "^1.0.0"
@@ -3571,10 +3566,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-marko@^4.23.10:
-  version "4.23.17"
-  resolved "https://registry.yarnpkg.com/marko/-/marko-4.23.17.tgz#d2c51f185344e929893eb27ca29bae759f5cd90b"
-  integrity sha512-lYYkNbeg9Zw1EVgJ9EzYMt3E6/qWBCDwvJ4mjPyTDmkv0Xkv1UoYoIQCeuMLrRvMtbexw1SSue7LB9IDmkvFJA==
+marko@^4.23.16:
+  version "4.24.2"
+  resolved "https://registry.yarnpkg.com/marko/-/marko-4.24.2.tgz#16dcb5c0e4852affc25a72f379901f22f2c6edc1"
+  integrity sha512-SbrJXLLNPfi4arDOo9yOL1feuWLmm6t1k8pI2wu6rdEXzvUXeaiMfBOZ82d59ZQwPDLnziGqcScgmSk/ShdPEA==
   dependencies:
     acorn "^7.4.0"
     app-module-path "^2.2.0"
@@ -3589,7 +3584,7 @@ marko@^4.23.10:
     estraverse "^4.3.0"
     events-light "^1.0.0"
     he "^1.1.0"
-    htmljs-parser "^2.7.1"
+    htmljs-parser "^2.11.1"
     lasso-caching-fs "^1.0.1"
     lasso-modules-client "^2.0.4"
     lasso-package-root "^1.0.1"
@@ -5544,10 +5539,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-ua-parser-js@^0.7.28:
-  version "0.7.28"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
-  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
+ua-parser-js@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.2.tgz#e2976c34dbfb30b15d2c300b2a53eac87c57a775"
+  integrity sha512-00y/AXhx0/SsnI51fTc0rLRmafiGOM4/O+ny10Ps7f+j/b8p/ZY11ytMgznXkOVo4GQ+KwQG5UQLkLGirsACRg==
 
 uglify-js@^2.8.22:
   version "2.8.29"
