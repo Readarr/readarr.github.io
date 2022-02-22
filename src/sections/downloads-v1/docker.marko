@@ -10,8 +10,8 @@
     <p>
       There are two common problems with Docker volumes: Paths that differ between the Readarr and download client container and paths that prevent fast moves and hard links.<br/>
       The first is a problem because the download client will report a download's path as
-      <code>/torrents/My.Book/</code>, but in the Readarr container that might be at
-      <code>/downloads/My.Book/</code>. The second is a performance issue and causes problems for seeding torrents. Both problems can be solved with well planned, consistent paths.
+      <code>/torrents/My.Book.2018/</code>, but in the Readarr container that might be at
+      <code>/downloads/My.Book.2018/</code>. The second is a performance issue and causes problems for seeding torrents. Both problems can be solved with well planned, consistent paths.
     </p>
     <p>
       Most Docker images suggest paths like
@@ -26,7 +26,7 @@
       <i>inside</i>
       the containers, such as
       <code>/data</code>.
-      Your books would be in
+      Your Books would be in
       <code>/data/Books</code>, torrents in
       <code>/data/downloads/torrents</code>
       and/or usenet downloads in
@@ -55,7 +55,7 @@
       <ul>
         <li>
           <h5>
-            <a href="https://ghcr.io/hotio/readarr:latest">ghcr.io/hotio/readarr:release</a>
+            <a href="https://hotio.dev/containers/readarr/">hotio/readarr:testing</a>
           </h5>
           <p>
             <a href="https://hotio.dev">hotio</a>
@@ -68,10 +68,10 @@
         </li>
         <li>
           <h5>
-            <a href="https://ghcr.io/linuxserver/readarr:latest">ghcr.io/linuxserver/readarr:latest</a>
+            <a href="https://docs.linuxserver.io/images/docker-readarr">lscr.io/linuxserver/readarr:develop</a>
           </h5>
           <p>
-            <a href="https://www.linuxserver.io">linuxserver.io</a>
+            <a href="https://docs.linuxserver.io/images/docker-readarr">linuxserver.io</a>
             is one of the most prolific and popular Docker image maintainers. They also maintain images for most of the popular download clients as well.
             LinuxServer specifies a couple of optional default volumes such as
             <code>/books</code>
