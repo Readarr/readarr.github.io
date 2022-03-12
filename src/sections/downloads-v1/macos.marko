@@ -9,10 +9,13 @@
     <p>Open the archive and drag the Readarr icon to your Application folder.</p>
     <alert level="warning">Readarr is not compatible with OSX versions < 10.15 (Catalina) due to .NET incompatibilities.</alert>
   </install-step>
-  <install-step num="3" title="Start Readarr">
+  <install-step num="3" title="Self-sign Readarr">
+    <p>Self-sign Readarr `codesign --force --deep -s - Readarr.app`</p>
+  </install-step>
+  <install-step num="4" title="Start Readarr">
     <p>Open Readarr.app in your Application folder.</p>
   </install-step>
-  <install-step num="4" title="View Readarr">
+  <install-step num="5" title="View Readarr">
     <p>
       Browse to
       <code>http://localhost:8787</code>
