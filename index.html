@@ -404,7 +404,8 @@ sudo systemctl enable --now readarr</code></pre>
                                 Download App package
                             </dt>
                             <dd>
-                                <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64&installer=true>Download macOS App</a>
+                                <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64&installer=true>Download Intel macOS App</a>
+                                <a class="btn btn-readarr" href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=arm64&installer=true>Download Arm macOS App</a>
                             </dd>
                             <dt>
                                 <span class=step>2</span>
@@ -447,7 +448,7 @@ sudo systemctl enable --now readarr</code></pre>
                                 <h5>Manual Install</h5>
                                 <p>
                                     It is possible to install Readarr manually using the
-                                    <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>.tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                    <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>Intel .tar.gz download</a> or <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=arm64>Arm .tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                                 <h5>Docker container</h5>
                                 <p>
@@ -635,15 +636,6 @@ sudo systemctl enable --now readarr</code></pre>
                         </p>
                     </div>
                 </a>
-                <a class=col-sm-3 href=https://www.reddit.com/r/Readarr target=_blank>
-                    <div class=text>
-                        <i class="fab fa-reddit-alien fa-2x"></i>
-                        <h4>Readarr subreddit</h4>
-                        <p>
-                            Discuss Readarr and talk to other users.
-                        </p>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -667,8 +659,8 @@ sudo systemctl enable --now readarr</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <script src=js/theme.js?v=85693f7f35c872717ee514c10ca38fdc></script>
-    <script type=text/javascript src=js/index-slider.js?v=072006930bd52788bb7ab0a7d16861f7></script>
+    <script src=js/theme.js?v=453b4ff1a4f41c49315a28f79aa5ea83></script>
+    <script type=text/javascript src=js/index-slider.js?v=48ba37f65a8c9499e4833ad1924fccb7></script>
     <script type=text/javascript>
         if (window.location.hash.toLocaleLowerCase() === "#donate") {
             window.location.replace("https://readarr.com/donate");
