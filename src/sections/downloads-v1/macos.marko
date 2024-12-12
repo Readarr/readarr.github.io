@@ -11,7 +11,10 @@
     <alert level="warning">Readarr is not compatible with OSX versions < 10.15 (Catalina) due to .NET incompatibilities.</alert>
   </install-step>
   <install-step num="3" title="Self-sign Readarr">
-    <p>Self-sign Readarr `codesign --force --deep -s - Readarr.app`</p>
+    <p>
+      Self-sign Readarr:
+      <pre><code class="bash">codesign --force --deep -s - /Applications/Readarr.app && xattr -rd com.apple.quarantine /Applications/Readarr.app</code></pre>
+    </p>
   </install-step>
   <install-step num="4" title="Start Readarr">
     <p>Open Readarr.app in your Application folder.</p>
