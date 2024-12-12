@@ -421,7 +421,8 @@ sudo systemctl enable --now readarr</code></pre>
                                 Self-sign Readarr
                             </dt>
                             <dd>
-                                <p>Self-sign Readarr `codesign --force --deep -s - Readarr.app`</p>
+                                <p>Self-sign Readarr:</p>
+                                <pre><code class=bash>codesign --force --deep -s - /Applications/Readarr.app && xattr -rd com.apple.quarantine /Applications/Readarr.app</code></pre>
                             </dd>
                             <dt>
                                 <span class=step>4</span>
@@ -448,7 +449,7 @@ sudo systemctl enable --now readarr</code></pre>
                                 <h5>Manual Install</h5>
                                 <p>
                                     It is possible to install Readarr manually using the
-                                    <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64>Intel .tar.gz download</a> or <a href=https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=arm64>Arm .tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
+                                    <a href="https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=x64">Intel .tar.gz download</a> or <a href="https://readarr.servarr.com/v1/update/develop/updatefile?os=osx&runtime=netcore&arch=arm64">Arm .tar.gz download</a>. However in that case you must manually deal with dependencies, installation and permissions.
                                 </p>
                                 <h5>Docker container</h5>
                                 <p>
